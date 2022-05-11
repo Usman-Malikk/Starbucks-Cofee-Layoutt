@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman /Dev></title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <section class="homepage" id="home">
+        <header>
+            <div class="img"> <a href=""><img src="./Images/logo.png" alt=""></a></div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contactme">Contact me</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Hi my name is <br> <span id="stbucks">StarBucks</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi ab maiores voluptate, expedita at sit
+                    porro nesciunt placeat. Facilis sit ratione deserunt a maxime consequuntur in ullam aut, ab enim!
+                </p>
+                <a href="#About" id="kmore">Know more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./Images/img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+
+            <li><img class="imggg" src="./Images/img1.png" onclick="changeimg('./Images/img1.png'); changeback('#017143'); changecolors('#017143');changeatag('#017143') " alt=""></li>
+            <li><img class="imggg" src="./Images/img2.png" onclick="changeimg('./Images/img2.png'); changeback('#eb7495');changecolors('#eb7495');changeatag('#eb7495') " alt=""></li>
+            <li><img class="imggg" src="./Images/img3.png" onclick="changeimg('./Images/img3.png');changeback('#d752b1');changecolors('#d752b1');changeatag('#d752b1') " alt=""></li>
+        </ul>
+        <div class="circle" id="circlee"></div>
+    </section>
+</body>
+
+<script>
+    var selectedimg = document.querySelectorAll("starbucks");
+    var cimg = document.querySelectorAll(".imggg")
+    var circle = document.getElementById("circlee")
+    var texttt = document.getElementById("stbucks")
+    function changeimg(imglink)
+
+    {
+        document.querySelector(".starbucks").src=imglink;
+    }
+    function changeback(color)
+
+    {
+        circle.style.background=color;
+    }
+    function changecolors(color)
+
+    {
+        stbucks.style.color=color;
+    }
+    function changeatag(color)
+
+    {
+        document.getElementById("kmore").style.background=color;
+    }
+</script>
+
+</html>

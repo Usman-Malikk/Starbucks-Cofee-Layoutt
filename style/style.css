@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+/* Header Section */
+header{
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+.img img{
+    max-width: 80px;
+}
+.navlist ul{
+    display: flex;
+}
+.navlist ul li{
+    list-style: none;
+    margin-right: 40px;
+}
+.navlist ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* first section */
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 100px;
+}
+
+/* Content */
+.content{
+    position: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 500px;
+}
+.content .textbox h2{
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textbox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textbox p{
+    color:#333
+}
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    letter-spacing: 1;
+    font-weight: 500;
+}
+.content .imgBox{
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+/* .content .imgBox img{
+    max-width: 340px;
+}  */
+.imggg{
+    height: 80px;
+}
+.starbucks{
+    width: 250px;
+    transition: 1s ease-in-out;
+    z-index: 100;
+cursor: pointer;
+
+}
+.starbucks:hover{
+    transform: rotate(360deg);
+}
+.thumb{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+}
+.thumb li{
+    list-style: none;
+    margin: 0px 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.thumb li:hover{
+transform: translateY(-40px);
+
+}
+
+.circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:   20%;
+    right: -60%;
+    background-color: #017143;
+    border-radius: 50%;
+    clip-path: circle(600px);
+    /* z-index: 3; */   
+}
+@media only screen and (max-width: 600px) {
+    
+    .imgBox{
+        display: none;
+
+    }
+    .circle{
+        display: none;
+    }
+    .homepage{
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .starbucks{
+        display: none;
+    }
+    .content{
+        justify-content: center;
+        /* text-align: center; */
+    }
+    .textbox{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlist ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlist ul {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);margin-left: 21px;
+        margin-top: 10px;
+    }
+    .bbbb{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navlist ul li{
+        margin-top: 9px;
+    }
+    #kmore{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
